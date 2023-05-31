@@ -1,6 +1,11 @@
 # Use an official Python runtime as a parent image
 FROM python:3.11.0-slim-buster
 
+# Update system 
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends build-essential && \
+    rm -rf /var/lib/apt/lists/*
+
 # Set the working directory to /app
 WORKDIR /app
 
