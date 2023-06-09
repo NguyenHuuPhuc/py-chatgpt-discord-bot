@@ -4,8 +4,8 @@ services:
     build: .
     restart: always
     environment:
-      BOT_TOKEN: "MTExMzM5NzM4MTE4NzI2MDQyNg.Gqgz2d.gkTKrLWV3YRPuLEQ7ouHxruhwT1u47nHBJt6Uw"
-      OPENAI_API_KEY: "jigIfzFMqO2WWnJyYg5eT3BlbkFJosBDpgJzE3UWze8qOK0P"
+      BOT_TOKEN: ""
+      OPENAI_API_KEY: ""
     volumes:
       - data:/data
 volumes:
